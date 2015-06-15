@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<html>
+	<head>
+		<title>Final Prject | Konnor Willison</title>
+		<link rel="stylesheet" type=text/css href="style.css">
+		<script src="genGame.js"></script>
+		<script src="jsonLoad.js"></script>
+	</head>
+	<body onload="showGrid();">
+		<h1>Final Project -- Konnor Willison</h1>
+
+		<ul>
+		<li><a href="documentation.html">Link to Documentation</a></li>
+		<br><button onclick="getJson()">JSON Change</button>
+		<p>Audio for How to Play Checkers</p>
+		<audio id="htmlAudio">
+			<source src="How to Play Checkers.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<button onclick="playAudio()">Play Audio</button>
+		<button onclick="pauseAudio()">Pause Audio</button>
+		</ul>
+
+		<div id="game">
+
+			<div id="game-input">
+			<h2 id="whosTurn">Select 'Start Game' to begin.</h2>
+			<div id="addBTN"></div>
+			<button id="startGame" onclick="startGame()">Start Game</button>
+			<h3>Move:</h3>
+			<input id="moveFromCell" autocomplete="off" type="text" size="5" value="Cell" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Cell';}"></input>
+			<input id="moveFromRow" autocomplete="off" type="text" size="5" value="Row" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Row';}"></input>
+			<h3>To:</h3>
+			<input id="moveToCell" autocomplete="off" type="text" size="5" value="Cell" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Cell';}"></input>
+			<input id="moveToRow" autocomplete="off" type="text" size="5" value="Row" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Row';}"></input>
+			<br>
+			<br>
+			<button onclick="startMove()" >Move</button>
+			
+			<button onclick="resetGame()" >Reset Game</button>
+		</div>
+
+			<div id="gridDiv">
+			This should get overridden
+			</div>
+		</div>
+	</body>
+
+</html>

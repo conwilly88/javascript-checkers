@@ -1,0 +1,46 @@
+#grid td {
+	height: 100px;
+	width: 100px;
+}
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+.black {
+	background-color: black;
+}
+.red {
+	background-color: red;
+}
+#changed {
+	border-color: #00CCFF;
+    border-style: solid;
+    border-width: 3px;
+}
+#design {
+	border-style: solid;
+    border-width: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+#coordiv {
+	border-style: solid;
+    border-width: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+#game-input {
+	border-style: solid;
+    border-width: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    margin-left: 850px;
+}
+#animate {
+	float: right;
+	position: static;
+}
